@@ -1,0 +1,18 @@
+<head>
+    <title>REST API TEST</title>
+</head>
+
+<body>
+<h1>Rest API Meteor Test!</h1>
+
+{{> employees}}
+
+
+</body>
+
+<template name="employees">
+    <br>
+    {{#each employees}}
+       {{_id}}: {{firstname}} {{lastname}}<br>
+    {{/each}}
+</template>
